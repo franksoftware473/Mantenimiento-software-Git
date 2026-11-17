@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de rutas - MoviCampus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            margin: 0;
+            padding: 30px;
+        }
+        .contenedor {
+            max-width: 650px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+        h1 { color: #173b65; }
+        .ruta {
+            background: #eaf2fa;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 8px;
+        }
+        button {
+            background: #173b65;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>MoviCampus</h1>
+        <h2>Consulta de rutas</h2>
+        <p>Consulta las rutas disponibles para llegar al campus.</p>
+
+        <div class="ruta">
+            <h3>Ruta 01 - Norte</h3>
+            <p>Recorrido: Portal Norte - Universidad</p>
+            <p>Horario: 6:00 a. m. - 8:00 a. m.</p>
+        </div>
+
+        <div class="ruta">
+            <h3>Ruta 02 - Sur</h3>
+            <p>Recorrido: Portal Sur - Universidad</p>
+            <p>Horario: 6:30 a. m. - 8:30 a. m.</p>
+        </div>
+
+        <div class="ruta">
+            <h3>Ruta 03 - Centro</h3>
+            <p>Recorrido: Centro - Universidad</p>
+            <p>Horario: 7:00 a. m. - 9:00 a. m.</p>
+        </div>
+
+        <button onclick="alert('Consulta de rutas realizada')">
+            Consultar rutas
+        </button>
+    </div>
+</body>
+</html>
