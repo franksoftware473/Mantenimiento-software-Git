@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar novedades - MoviCampus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            margin: 0;
+            padding: 30px;
+        }
+        .contenedor {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+        h1 { color: #173b65; }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        textarea { height: 120px; }
+        button {
+            margin-top: 18px;
+            background: #173b65;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>MoviCampus</h1>
+        <h2>Reportar novedades</h2>
+        <p>Utiliza este formulario para informar una novedad relacionada con el transporte universitario.</p>
+
+        <form onsubmit="reportar(event)">
+            <label for="tipo">Tipo de novedad:</label>
+            <select id="tipo" required>
+                <option value="">Selecciona una opción</option>
+                <option>Retraso de la ruta</option>
+                <option>Problema con el vehículo</option>
+                <option>Cambio de recorrido</option>
+                <option>Otro</option>
+            </select>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" placeholder="Describe la novedad..." required></textarea>
+
+            <button type="submit">Enviar reporte</button>
+        </form>
+    </div>
+
+    <script>
+        function reportar(event) {
+            event.preventDefault();
+            alert("Tu reporte fue registrado como demostración.");
+            document.querySelector("form").reset();
+        }
+    </script>
+</body>
+</html>
