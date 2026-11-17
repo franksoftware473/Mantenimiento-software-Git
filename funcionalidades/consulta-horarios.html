@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de horarios - MoviCampus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            margin: 0;
+            padding: 30px;
+        }
+        .contenedor {
+            max-width: 750px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+        h1 { color: #173b65; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #d1dbe5;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #173b65;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #eaf2fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>MoviCampus</h1>
+        <h2>Consulta de horarios</h2>
+        <p>Consulta los horarios de salida de las rutas universitarias.</p>
+
+        <table>
+            <tr>
+                <th>Ruta</th>
+                <th>Hora de salida</th>
+                <th>Hora de llegada</th>
+                <th>Días</th>
+            </tr>
+            <tr>
+                <td>Ruta 01 - Norte</td>
+                <td>6:00 a. m.</td>
+                <td>7:00 a. m.</td>
+                <td>Lunes a viernes</td>
+            </tr>
+            <tr>
+                <td>Ruta 02 - Sur</td>
+                <td>6:30 a. m.</td>
+                <td>7:30 a. m.</td>
+                <td>Lunes a viernes</td>
+            </tr>
+            <tr>
+                <td>Ruta 03 - Centro</td>
+                <td>7:00 a. m.</td>
+                <td>8:00 a. m.</td>
+                <td>Lunes a viernes</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
